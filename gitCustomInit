@@ -1,0 +1,7 @@
+init="git init"
+add="git add ."
+commit="git commit -m \"Add default files\""
+addRemote="git remote add origin $1"
+push="git push -u origin master"
+cmd="${init} && ${add} && ${commit} && ${addRemote} && ${push}"
+eval ${cmd}
